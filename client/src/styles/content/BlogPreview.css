@@ -1,0 +1,29 @@
+.blog-preview-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+  
+.blog-preview-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+  
+.blog-preview-item {
+    max-width: 300px;
+    margin: 10px;
+    text-align: left;
+}
+  
+.blog-preview-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+  
+.blog-preview-link {
+    color: #007bff;
+    text-decoration: none;
+}  

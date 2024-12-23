@@ -33,7 +33,7 @@ const Footer = () => {
           About Us
         </a>
       </div>
-      <p>&copy; 2024 MediVoyage. All rights reserved.</p>
+      <p>&copy; 2024 IKONIK. All rights reserved.</p>
     </footer>
   );
 };

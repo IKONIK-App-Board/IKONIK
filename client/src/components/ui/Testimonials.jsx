@@ -4,7 +4,7 @@ const Testimonials = () => {
   const testimonials = [
     { name: "John D.", review: "Excellent service and care!" },
     { name: "Emma S.", review: "The trip and surgery were seamless!" },
-    { name: "Liam O.", review: "Highly recommend MediVoyage!" },
+    { name: "Liam O.", review: "Highly recommend IKONIK!" },
   ];
 
   return (

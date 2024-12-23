@@ -40,7 +40,7 @@ const Hero = () => {
     <header style={styles.header}>
       <div style={styles.overlay}></div>
       <div style={styles.content}>
-        <div style={styles.logo}>MediVoyage</div>
+        <div style={styles.logo}>IKONIK</div>
         <h1 style={styles.heroText}>Your Gateway to Health & Exploration</h1>
         <p>Experience world-class medical treatments while enjoying exotic destinations.</p>
       </div>

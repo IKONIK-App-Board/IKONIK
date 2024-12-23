@@ -21,7 +21,7 @@ const FeatureSection = () => {
 
   return (
     <section style={{ padding: "50px", backgroundColor: "#f9f9f9", textAlign: "center" }}>
-      <h2>Why Choose MediVoyage?</h2>
+      <h2>Why Choose IKONIK?</h2>
       <div style={{ display: "flex", justifyContent: "space-around", marginTop: "20px" }}>
         {features.map((feature, index) => (
           <div key={index} style={{ maxWidth: "300px", textAlign: "center" }}>

@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/content/BlogPreview.css";
 
 const BlogPreview = () => {
   const blogs = [
@@ -20,18 +21,14 @@ const BlogPreview = () => {
   ];
 
   return (
-    <section style={{ padding: "50px", backgroundColor: "#fff", textAlign: "center" }}>
+    <section className="blog-preview-section">
       <h2>Latest Insights</h2>
-      <div style={{ display: "flex", justifyContent: "space-around", marginTop: "20px" }}>
+      <div className="blog-preview-container">
         {blogs.map((blog, index) => (
-          <div key={index} style={{ maxWidth: "300px", margin: "10px", textAlign: "left" }}>
-            <img
-              src={blog.image}
-              alt={blog.title}
-              style={{ width: "100%", height: "150px", objectFit: "cover", borderRadius: "8px" }}
-            />
+          <div key={index} className="blog-preview-item">
+            <img src={blog.image} alt={blog.title} className="blog-preview-image" />
             <h4>{blog.title}</h4>
-            <a href={blog.link} style={{ color: "#007bff", textDecoration: "none" }}>
+            <a href={blog.link} className="blog-preview-link">
               Read More
             </a>
           </div>

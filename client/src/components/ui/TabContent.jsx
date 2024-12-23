@@ -64,7 +64,7 @@ const TabContent = ({ activeTab }) => {
     return (
       <div>
         <blockquote>
-          "MediVoyage transformed my healthcare journey. The blend of care and travel was
+          "IKONIK transformed my healthcare journey. The blend of care and travel was
           impeccable!"
         </blockquote>
         <cite>- Sarah L.</cite>

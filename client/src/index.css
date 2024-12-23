@@ -1,0 +1,15 @@
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-light-gray: #c6c6c6;
+    --color-dark-gray: #545454;
+    --color-very-light-gray: #e6e6e6;
+    --Beiruti-font-family: "Beiruti", serif;
+    --Orbitron-font-family: "Orbitron", serif;
+}
+
+body{
+    font-family: var(--Orbitron-font-family);
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
