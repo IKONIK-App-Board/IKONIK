@@ -10,7 +10,7 @@ const CustomerJourney = () => {
   ];
 
   return (
-    <section className="customer-journey-section">
+    <section className="customer-journey-section" id="journey">
       <h2>Your Journey with Us</h2>
       <div className="customer-journey-container">
         {steps.map((step, index) => (

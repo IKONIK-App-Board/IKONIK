@@ -18,7 +18,7 @@ const EventCalendar = () => {
   return (
     <section className="event-calendar-section">
       <h2>Upcoming Events</h2>
-      <div className="event-calendar-container">
+      <div className="event-calendar-container" id="events">
         {events.map((event, index) => (
           <div key={index} className="event-card">
             <h4 className="event-date">{event.date}</h4>

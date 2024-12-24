@@ -21,7 +21,7 @@ const FeatureSection = () => {
   ];
 
   return (
-    <section className="feature-section">
+    <section className="feature-section" id="features">
       <h2>Why Choose IKONIK?</h2>
       <div className="feature-container">
         {features.map((feature, index) => (

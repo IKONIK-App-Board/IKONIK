@@ -31,7 +31,7 @@ const ServicesList = () => {
   ];
 
   return (
-    <section className="services-list">
+    <section className="services-list" id="services">
       <h2>Our Services</h2>
       <div className="services-container">
         {services.map((service, index) => (

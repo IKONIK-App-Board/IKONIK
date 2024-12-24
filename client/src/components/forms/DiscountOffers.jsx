@@ -14,7 +14,7 @@ const DiscountOffers = () => {
   ];
 
   return (
-    <section className="discount-offers">
+    <section className="discount-offers" id="offers">
       <h2>Special Offers</h2>
       <div className="offer-cards">
         {offers.map((offer, index) => (

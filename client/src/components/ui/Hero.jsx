@@ -3,7 +3,7 @@ import "../../styles/ui/Hero.css";  // Corrected path to the CSS file
 
 const Hero = () => {
   return (
-    <header className="hero-header">
+    <header className="hero-header" id="home">
       <div className="hero-overlay"></div>
       <div className="hero-content">
         <div className="hero-logo">IKONIK</div>
