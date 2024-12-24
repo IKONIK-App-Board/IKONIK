@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/ui/Testimonials.css";  // Corrected path to the CSS file
 
 const Testimonials = () => {
   const testimonials = [
@@ -8,11 +9,11 @@ const Testimonials = () => {
   ];
 
   return (
-    <section style={{ padding: "50px", backgroundColor: "#fff", textAlign: "center" }}>
+    <section className="testimonials-section">
       <h2>What Our Customers Say</h2>
-      <div style={{ display: "flex", justifyContent: "space-around", marginTop: "20px" }}>
+      <div className="testimonials-container">
         {testimonials.map((testimonial, index) => (
-          <div key={index} style={{ maxWidth: "300px", textAlign: "center" }}>
+          <div key={index} className="testimonial-item">
             <p>"{testimonial.review}"</p>
             <strong>- {testimonial.name}</strong>
           </div>

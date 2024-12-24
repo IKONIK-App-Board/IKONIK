@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "../../styles/data/StatsCounter.css";
 
 const StatsCounter = () => {
   const stats = [
@@ -25,13 +26,13 @@ const StatsCounter = () => {
   }, []);
 
   return (
-    <section style={{ padding: "50px", backgroundColor: "#e9f5ff", textAlign: "center" }}>
+    <section className="stats-counter-section">
       <h2>Our Achievements</h2>
-      <div style={{ display: "flex", justifyContent: "space-around", marginTop: "20px" }}>
+      <div className="stats-counter-container">
         {stats.map((stat, index) => (
-          <div key={index} style={{ textAlign: "center" }}>
-            <h3 style={{ fontSize: "40px", color: "#007bff" }}>{counts[index]}</h3>
-            <p>{stat.label}</p>
+          <div key={index} className="stat-item">
+            <h3 className="stat-value">{counts[index]}</h3>
+            <p className="stat-label">{stat.label}</p>
           </div>
         ))}
       </div>

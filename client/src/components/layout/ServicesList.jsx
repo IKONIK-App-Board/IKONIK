@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/layout/ServicesList.css";  // Corrected path to the CSS file
 
 const ServicesList = () => {
   const services = [
@@ -30,12 +31,12 @@ const ServicesList = () => {
   ];
 
   return (
-    <section style={{ padding: "50px", backgroundColor: "#f7f7f7", textAlign: "center" }}>
+    <section className="services-list">
       <h2>Our Services</h2>
-      <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap", marginTop: "20px" }}>
+      <div className="services-container">
         {services.map((service, index) => (
-          <div key={index} style={{ maxWidth: "250px", margin: "10px" }}>
-            <div style={{ fontSize: "40px", marginBottom: "10px" }}>{service.icon}</div>
+          <div key={index} className="service-item">
+            <div className="service-icon">{service.icon}</div>
             <h4>{service.title}</h4>
             <p>{service.description}</p>
           </div>

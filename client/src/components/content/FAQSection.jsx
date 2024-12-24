@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../styles/content/FAQSection.css";
 
 const FAQSection = () => {
   const faqs = [
@@ -14,18 +15,18 @@ const FAQSection = () => {
   };
 
   return (
-    <section style={{ padding: "50px", backgroundColor: "#f0f0f0" }}>
+    <section className="faq-section">
       <h2>Frequently Asked Questions</h2>
-      <div>
+      <div className="faq-container">
         {faqs.map((faq, index) => (
-          <div key={index} style={{ marginBottom: "10px" }}>
+          <div key={index} className="faq-item">
             <h4
               onClick={() => toggleFAQ(index)}
-              style={{ cursor: "pointer", color: "#007bff" }}
+              className={`faq-question ${expandedIndex === index ? "active" : ""}`}
             >
               {faq.question}
             </h4>
-            {expandedIndex === index && <p>{faq.answer}</p>}
+            {expandedIndex === index && <p className="faq-answer">{faq.answer}</p>}
           </div>
         ))}
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/feature/EventCalendar.css";
 
 const EventCalendar = () => {
   const events = [
@@ -15,14 +16,14 @@ const EventCalendar = () => {
   ];
 
   return (
-    <section style={{ padding: "50px", textAlign: "center", backgroundColor: "#f7f7f7" }}>
+    <section className="event-calendar-section">
       <h2>Upcoming Events</h2>
-      <div style={{ marginTop: "20px", display: "flex", justifyContent: "center", flexWrap: "wrap", gap: "20px" }}>
+      <div className="event-calendar-container">
         {events.map((event, index) => (
-          <div key={index} style={{ backgroundColor: "#fff", padding: "20px", borderRadius: "8px", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", textAlign: "center" }}>
-            <h4>{event.date}</h4>
-            <p>{event.title}</p>
-            <p>{event.location}</p>
+          <div key={index} className="event-card">
+            <h4 className="event-date">{event.date}</h4>
+            <p className="event-title">{event.title}</p>
+            <p className="event-location">{event.location}</p>
           </div>
         ))}
       </div>

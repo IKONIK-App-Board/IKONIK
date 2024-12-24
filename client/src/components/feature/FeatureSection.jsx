@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/feature/FeatureSection.css";
 
 const FeatureSection = () => {
   const features = [
@@ -20,14 +21,14 @@ const FeatureSection = () => {
   ];
 
   return (
-    <section style={{ padding: "50px", backgroundColor: "#f9f9f9", textAlign: "center" }}>
+    <section className="feature-section">
       <h2>Why Choose IKONIK?</h2>
-      <div style={{ display: "flex", justifyContent: "space-around", marginTop: "20px" }}>
+      <div className="feature-container">
         {features.map((feature, index) => (
-          <div key={index} style={{ maxWidth: "300px", textAlign: "center" }}>
-            <div style={{ fontSize: "40px" }}>{feature.icon}</div>
-            <h4>{feature.title}</h4>
-            <p>{feature.description}</p>
+          <div key={index} className="feature-card">
+            <div className="feature-icon">{feature.icon}</div>
+            <h4 className="feature-title">{feature.title}</h4>
+            <p className="feature-description">{feature.description}</p>
           </div>
         ))}
       </div>

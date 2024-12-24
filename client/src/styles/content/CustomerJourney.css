@@ -1,0 +1,32 @@
+.customer-journey-section {
+    padding: 50px;
+    text-align: center;
+}
+  
+.customer-journey-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+  
+.customer-journey-step {
+    max-width: 250px;
+    text-align: center;
+}
+  
+.customer-journey-number {
+    font-size: 30px;
+    color: #007bff;
+    background-color: #e9f5ff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin: auto;
+}
+  
+.customer-journey-step h4 {
+    margin-top: 10px;
+}
+  

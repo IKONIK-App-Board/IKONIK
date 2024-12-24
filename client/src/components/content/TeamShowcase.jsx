@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/content/TeamShowcase.css";
 
 const TeamShowcase = () => {
   const team = [
@@ -25,21 +26,12 @@ const TeamShowcase = () => {
   ];
 
   return (
-    <section style={{ padding: "50px", textAlign: "center", backgroundColor: "#f7f7f7" }}>
+    <section className="team-showcase-section">
       <h2>Meet Our Team</h2>
-      <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap", marginTop: "20px" }}>
+      <div className="team-container">
         {team.map((member, index) => (
-          <div key={index} style={{ maxWidth: "200px", margin: "10px", textAlign: "center" }}>
-            <img
-              src={member.photo}
-              alt={member.name}
-              style={{
-                width: "100%",
-                height: "200px",
-                objectFit: "cover",
-                borderRadius: "10px",
-              }}
-            />
+          <div key={index} className="team-card">
+            <img src={member.photo} alt={member.name} className="team-photo" />
             <h4>{member.name}</h4>
             <p>{member.position}</p>
           </div>

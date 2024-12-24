@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/content/CustomerJourney.css";
 
 const CustomerJourney = () => {
   const steps = [
@@ -9,26 +10,13 @@ const CustomerJourney = () => {
   ];
 
   return (
-    <section style={{ padding: "50px", textAlign: "center" }}>
+    <section className="customer-journey-section">
       <h2>Your Journey with Us</h2>
-      <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap", marginTop: "20px" }}>
+      <div className="customer-journey-container">
         {steps.map((step, index) => (
-          <div key={index} style={{ maxWidth: "250px", textAlign: "center" }}>
-            <div
-              style={{
-                fontSize: "30px",
-                color: "#007bff",
-                backgroundColor: "#e9f5ff",
-                borderRadius: "50%",
-                width: "60px",
-                height: "60px",
-                lineHeight: "60px",
-                margin: "auto",
-              }}
-            >
-              {step.step}
-            </div>
-            <h4 style={{ marginTop: "10px" }}>{step.title}</h4>
+          <div key={index} className="customer-journey-step">
+            <div className="customer-journey-number">{step.step}</div>
+            <h4>{step.title}</h4>
             <p>{step.description}</p>
           </div>
         ))}

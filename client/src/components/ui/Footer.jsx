@@ -1,35 +1,17 @@
 import React from "react";
+import "../../styles/ui/Footer.css";  // Corrected path to the CSS file
 
 const Footer = () => {
-  const styles = {
-    container: {
-      padding: "20px",
-      backgroundColor: "#333",
-      color: "#fff",
-      textAlign: "center",
-    },
-    links: {
-      display: "flex",
-      justifyContent: "center",
-      gap: "20px",
-      marginBottom: "10px",
-    },
-    link: {
-      color: "#fff",
-      textDecoration: "none",
-    },
-  };
-
   return (
-    <footer style={styles.container}>
-      <div style={styles.links}>
-        <a href="#services" style={styles.link}>
+    <footer className="footer-container">
+      <div className="footer-links">
+        <a href="#services" className="footer-link">
           Services
         </a>
-        <a href="#contact" style={styles.link}>
+        <a href="#contact" className="footer-link">
           Contact
         </a>
-        <a href="#about" style={styles.link}>
+        <a href="#about" className="footer-link">
           About Us
         </a>
       </div>

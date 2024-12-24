@@ -1,0 +1,34 @@
+.appointment-scheduler {
+    padding: 50px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+  
+.appointment-form {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+  
+.appointment-input,
+.appointment-select {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.appointment-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.appointment-button:hover {
+    background-color: #0056b3;
+}  

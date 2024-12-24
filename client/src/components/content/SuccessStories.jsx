@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/content/SuccessStories.css";
 
 const SuccessStories = () => {
   const stories = [
@@ -15,16 +16,12 @@ const SuccessStories = () => {
   ];
 
   return (
-    <section style={{ padding: "50px", textAlign: "center" }}>
+    <section className="success-stories-section">
       <h2>Success Stories</h2>
-      <div style={{ display: "flex", justifyContent: "center", flexWrap: "wrap", marginTop: "20px" }}>
+      <div className="stories-container">
         {stories.map((story, index) => (
-          <div key={index} style={{ maxWidth: "300px", margin: "10px", textAlign: "center" }}>
-            <img
-              src={story.image}
-              alt={story.title}
-              style={{ width: "100%", height: "200px", objectFit: "cover", borderRadius: "8px" }}
-            />
+          <div key={index} className="story-card">
+            <img src={story.image} alt={story.title} className="story-image" />
             <h4>{story.title}</h4>
             <p>{story.content}</p>
           </div>

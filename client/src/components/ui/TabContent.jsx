@@ -1,39 +1,17 @@
 import React from "react";
+import "../../styles/ui/TabContent.css";  // Corrected path to the CSS file
 
 const TabContent = ({ activeTab }) => {
-  const styles = {
-    carousel: {
-      display: "flex",
-      overflowX: "scroll",
-      gap: "20px",
-      padding: "20px",
-      scrollbarWidth: "none",
-    },
-    carouselItem: {
-      flex: "0 0 300px",
-      backgroundColor: "#fff",
-      borderRadius: "8px",
-      boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
-      overflow: "hidden",
-      transition: "transform 0.3s",
-    },
-    cardImage: {
-      width: "100%",
-      height: "200px",
-      objectFit: "cover",
-    },
-  };
-
   if (activeTab === "services") {
     const services = ["Cosmetic", "Orthopedic", "Dental"];
     return (
-      <div style={styles.carousel}>
+      <div className="carousel">
         {services.map((service, index) => (
-          <div key={index} style={styles.carouselItem}>
+          <div key={index} className="carousel-item">
             <img
               src={`/images/service${index + 1}.jpg`}
               alt={service}
-              style={styles.cardImage}
+              className="card-image"
             />
             <h4>{service} Care</h4>
           </div>
@@ -45,13 +23,13 @@ const TabContent = ({ activeTab }) => {
   if (activeTab === "destinations") {
     const destinations = ["Thailand", "Turkey", "India"];
     return (
-      <div style={styles.carousel}>
+      <div className="carousel">
         {destinations.map((destination, index) => (
-          <div key={index} style={styles.carouselItem}>
+          <div key={index} className="carousel-item">
             <img
               src={`/images/destination${index + 1}.jpg`}
               alt={destination}
-              style={styles.cardImage}
+              className="card-image"
             />
             <h4>{destination}</h4>
           </div>

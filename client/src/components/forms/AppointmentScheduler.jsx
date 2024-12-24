@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../../styles/forms/AppointmentScheduler.css";
 
 const AppointmentScheduler = () => {
   const [form, setForm] = useState({ name: "", date: "", service: "" });
@@ -13,38 +14,35 @@ const AppointmentScheduler = () => {
   };
 
   return (
-    <section style={{ padding: "50px", backgroundColor: "#f7f7f7", textAlign: "center" }}>
+    <section className="appointment-scheduler">
       <h2>Book an Appointment</h2>
-      <form
-        onSubmit={handleSubmit}
-        style={{ maxWidth: "400px", margin: "0 auto", marginTop: "20px" }}
-      >
+      <form className="appointment-form" onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"
           placeholder="Your Name"
           value={form.name}
           onChange={handleChange}
-          style={{ display: "block", width: "100%", margin: "10px 0", padding: "10px" }}
+          className="appointment-input"
         />
         <input
           type="date"
           name="date"
           value={form.date}
           onChange={handleChange}
-          style={{ display: "block", width: "100%", margin: "10px 0", padding: "10px" }}
+          className="appointment-input"
         />
         <select
           name="service"
           value={form.service}
           onChange={handleChange}
-          style={{ display: "block", width: "100%", margin: "10px 0", padding: "10px" }}
+          className="appointment-select"
         >
           <option value="">Select Service</option>
           <option value="hospital">Hospital Care</option>
           <option value="dental">Dental Services</option>
         </select>
-        <button type="submit" style={{ padding: "10px 20px", backgroundColor: "#007bff", color: "#fff", border: "none" }}>
+        <button type="submit" className="appointment-button">
           Schedule Now
         </button>
       </form>

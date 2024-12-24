@@ -1,37 +1,15 @@
 import React from "react";
+import "../../styles/navigation/TabNavigation.css";  // Corrected path to the CSS file
 
 const TabNavigation = ({ activeTab, onTabChange }) => {
-  const styles = {
-    nav: {
-      display: "flex",
-      justifyContent: "center",
-      gap: "20px",
-      marginTop: "20px",
-    },
-    navItem: {
-      fontSize: "18px",
-      cursor: "pointer",
-      padding: "10px",
-      borderRadius: "5px",
-      transition: "background-color 0.3s",
-    },
-    activeItem: {
-      backgroundColor: "#28a745",
-      color: "#fff",
-    },
-  };
-
   const tabs = ["services", "destinations", "testimonials"];
 
   return (
-    <nav style={styles.nav}>
+    <nav className="tab-nav">
       {tabs.map((tab) => (
         <div
           key={tab}
-          style={{
-            ...styles.navItem,
-            ...(activeTab === tab ? styles.activeItem : {}),
-          }}
+          className={`tab-item ${activeTab === tab ? "active-tab" : ""}`}
           onClick={() => onTabChange(tab)}
         >
           {tab.charAt(0).toUpperCase() + tab.slice(1)}

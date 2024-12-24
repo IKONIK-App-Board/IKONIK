@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/ui/PartnersSection.css";  // Corrected path to the CSS file
 
 const PartnersSection = () => {
   const partners = [
@@ -9,20 +10,15 @@ const PartnersSection = () => {
   ];
 
   return (
-    <section style={{ padding: "50px", textAlign: "center" }}>
+    <section className="partners-section">
       <h2>Our Trusted Partners</h2>
-      <div style={{ display: "flex", justifyContent: "space-around", alignItems: "center", flexWrap: "wrap", marginTop: "20px" }}>
+      <div className="partners-container">
         {partners.map((partner, index) => (
           <img
             key={index}
             src={partner}
             alt={`Partner ${index + 1}`}
-            style={{
-              height: "80px",
-              objectFit: "contain",
-              margin: "10px",
-              filter: "grayscale(100%)",
-            }}
+            className="partner-logo"
           />
         ))}
       </div>

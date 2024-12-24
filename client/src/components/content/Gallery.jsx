@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/content/Gallery.css";
 
 const Gallery = () => {
   const images = [
@@ -9,20 +10,15 @@ const Gallery = () => {
   ];
 
   return (
-    <section style={{ padding: "50px", textAlign: "center" }}>
+    <section className="gallery-section">
       <h2>Our Facilities & Destinations</h2>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "10px", marginTop: "20px" }}>
+      <div className="gallery-grid">
         {images.map((image, index) => (
           <img
             key={index}
             src={image}
             alt={`Gallery ${index + 1}`}
-            style={{
-              width: "100%",
-              height: "200px",
-              objectFit: "cover",
-              borderRadius: "8px",
-            }}
+            className="gallery-image"
           />
         ))}
       </div>

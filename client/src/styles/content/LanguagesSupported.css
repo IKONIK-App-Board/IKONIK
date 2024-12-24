@@ -1,0 +1,21 @@
+.languages-section {
+    padding: 50px;
+    text-align: center;
+}
+  
+.languages-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+  
+.language-badge {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 14px;
+}
+  

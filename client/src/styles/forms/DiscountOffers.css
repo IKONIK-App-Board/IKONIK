@@ -1,0 +1,31 @@
+.discount-offers {
+    padding: 50px;
+    text-align: center;
+    background-color: #fffbf0;
+}
+  
+.offer-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+  
+.offer-card {
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.offer-card h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+.offer-card p {
+    font-size: 16px;
+}  

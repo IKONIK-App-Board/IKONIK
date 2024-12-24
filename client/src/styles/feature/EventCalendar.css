@@ -1,0 +1,32 @@
+.event-calendar-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+  
+.event-calendar-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+  
+.event-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+  
+.event-date {
+    font-weight: bold;
+    color: #007bff;
+}
+  
+.event-title,
+.event-location {
+    font-size: 16px;
+    color: #333;
+}  
