@@ -1,30 +1,31 @@
 import React from "react";
+import { FaHospitalAlt, FaTooth, FaStethoscope, FaEye, FaSpa } from "react-icons/fa"; // Importing icons from react-icons
 import "../../styles/layout/ServicesList.css";  // Corrected path to the CSS file
 
 const ServicesList = () => {
   const services = [
     {
-      icon: "🏥",
+      icon: <FaHospitalAlt />,
       title: "Hospital Care",
       description: "Access top hospitals for surgeries and treatments.",
     },
     {
-      icon: "🦷",
+      icon: <FaTooth />,
       title: "Dental Services",
       description: "Affordable dental care with state-of-the-art facilities.",
     },
     {
-      icon: "🩺",
+      icon: <FaStethoscope />,
       title: "Health Check-ups",
       description: "Comprehensive health check-up packages.",
     },
     {
-      icon: "👁️",
+      icon: <FaEye />,
       title: "Eye Care",
       description: "World-class eye treatments and surgeries.",
     },
     {
-      icon: "🌿",
+      icon: <FaSpa />,
       title: "Wellness Retreats",
       description: "Holistic wellness packages for rejuvenation.",
     },
@@ -32,7 +33,7 @@ const ServicesList = () => {
 
   return (
     <section className="services-list" id="services">
-      <h2>Our Services</h2>
+      <h2>Our Premium Services</h2>
       <div className="services-container">
         {services.map((service, index) => (
           <div key={index} className="service-item">

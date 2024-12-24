@@ -1,32 +1,72 @@
 .customer-journey-section {
-    padding: 50px;
+    padding: 50px 20px;
     text-align: center;
+    background-color: var(--color-light-gray);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-  
+
+.customer-journey-section h2 {
+    font-size: 2.2rem;
+    font-family: var(--Orbitron-font-family);
+    color: var(--color-black);
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
 .customer-journey-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 20px;
 }
-  
+
 .customer-journey-step {
     max-width: 250px;
     text-align: center;
+    background-color: var(--color-white);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-  
+
+.customer-journey-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
 .customer-journey-number {
-    font-size: 30px;
-    color: #007bff;
-    background-color: #e9f5ff;
+    font-size: 35px;
+    color: var(--color-white);
+    background-color: var(--color-black);
     border-radius: 50%;
     width: 60px;
     height: 60px;
     line-height: 60px;
-    margin: auto;
+    margin: 0 auto 15px;
+    font-family: var(--Orbitron-font-family);
+    font-weight: bold;
 }
-  
+
 .customer-journey-step h4 {
     margin-top: 10px;
+    font-size: 1.4rem;
+    color: var(--color-black);
 }
-  
+
+.customer-journey-step p {
+    font-size: 1rem;
+    color: var(--color-dark-gray);
+    line-height: 1.4;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .customer-journey-container {
+        justify-content: center;
+    }
+    .customer-journey-step {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
