@@ -1,5 +1,6 @@
 import React from "react";
-import "../../styles/forms/ContactModal.css";
+// import "../../styles/forms/ContactModal.css";
+import logo from '/icons/ikonik-black-logo-transparent-back.png';
 
 const ContactModal = ({ isVisible, onClose }) => {
   if (!isVisible) return null;
@@ -7,7 +8,10 @@ const ContactModal = ({ isVisible, onClose }) => {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <h3>Contact MediVoyage</h3>
+        <div id="contact-logo-container">
+          <img src={logo} alt="Ikonik Logo" />
+        </div>
+        <h3>Contact IKONIK</h3>
         <form>
           <input type="text" placeholder="Your Name" className="modal-input" />
           <input type="email" placeholder="Your Email" className="modal-input" />

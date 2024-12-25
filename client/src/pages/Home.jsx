@@ -21,6 +21,8 @@ import ServicesList from "../components/layout/ServicesList";
 import PartnersSection from "../components/ui/PartnersSection";
 import Testimonials from "../components/ui/Testimonials";
 import VideoSection from "../components/ui/VideoSection";
+import ScrollToTop from "../components/triggers/ScrollToTop";
+import ContactUS from "../components/triggers/ContactUs";
 
 const HomePage = () => {
 
@@ -47,6 +49,8 @@ const HomePage = () => {
       <InteractiveMap />
       <PartnersSection />
       <Footer />
+      <ScrollToTop />
+      <ContactUS/>
     </>
   );
 };

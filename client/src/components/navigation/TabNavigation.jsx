@@ -5,7 +5,7 @@ import { GiHamburgerMenu, GiJourney } from 'react-icons/gi';
 import { BsAirplaneEnginesFill } from "react-icons/bs";
 import { MdLocalOffer } from "react-icons/md";
 
-import Logo from '/icons/IKONIK.jpg'; // Adjust the path if necessary
+import Logo from '/icons/ikonik-white-kogo-transparent-back.png';
 
 const TabNavigation = () => {
   const [activeTab, setActiveTab] = useState("home");
