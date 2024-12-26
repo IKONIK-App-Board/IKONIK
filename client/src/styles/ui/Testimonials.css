@@ -1,17 +1,99 @@
 .testimonials-section {
-    padding: 50px;
-    background-color: #fff;
+    padding: 80px 20px;
+    background-color: var(--color-white);
     text-align: center;
 }
   
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-black) !important;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+  
+/* Testimonials Container */
 .testimonials-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
 }
   
+/* Individual Testimonial Item */
 .testimonial-item {
-    max-width: 300px;
+    max-width: 320px;
+    min-width: 280px;
+    background-color: var(--color-dark-gray);
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
   
+.testimonial-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+  
+/* Testimonial Review */
+.testimonial-review {
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+    font-style: italic;
+    margin-bottom: 15px;
+}
+  
+/* Testimonial Name */
+.testimonial-name {
+    font-size: 1.1rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+  
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .section-heading {
+      font-size: 2.2rem;
+    }
+  
+    .testimonial-item {
+      padding: 20px;
+      max-width: 280px;
+    }
+  
+    .testimonial-review {
+      font-size: 1rem;
+    }
+  
+    .testimonial-name {
+      font-size: 1rem;
+    }
+}
+  
+@media (max-width: 768px) {
+    .section-heading {
+      font-size: 1.8rem;
+    }
+  
+    .testimonials-container {
+      justify-content: center;
+    }
+  
+    .testimonial-item {
+      padding: 15px;
+      max-width: 90%;
+    }
+  
+    .testimonial-review {
+      font-size: 1rem;
+    }
+  
+    .testimonial-name {
+      font-size: 1rem;
+    }
+}

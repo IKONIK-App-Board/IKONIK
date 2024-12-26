@@ -23,6 +23,7 @@ import Testimonials from "../components/ui/Testimonials";
 import VideoSection from "../components/ui/VideoSection";
 import ScrollToTop from "../components/triggers/ScrollToTop";
 import ContactUS from "../components/triggers/ContactUs";
+import AppointmentTrigger from "../components/triggers/AppointmentTrigger";
 
 const HomePage = () => {
 
@@ -37,7 +38,6 @@ const HomePage = () => {
       <EventCalendar />
       <TeamShowcase />
       <SuccessStories />
-      <AppointmentScheduler />
       <LanguagesSupported />
       <FAQSection/>
       <StatsCounter />
@@ -51,6 +51,7 @@ const HomePage = () => {
       <Footer />
       <ScrollToTop />
       <ContactUS/>
+      <AppointmentTrigger />
     </>
   );
 };

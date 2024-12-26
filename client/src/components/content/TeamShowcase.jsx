@@ -4,36 +4,38 @@ import "../../styles/content/TeamShowcase.css";
 const TeamShowcase = () => {
   const team = [
     {
-      name: "Dr. Sarah Thompson",
+      name: "Dr. Khaled Al-Farsi",
       position: "Chief Medical Officer",
-      photo: "https://via.placeholder.com/200x200?text=Team+1",
+      photo: "/images/team/team-1.png",
     },
     {
-      name: "Michael Brown",
+      name: "Omar Khalid",
       position: "Travel Coordinator",
-      photo: "https://via.placeholder.com/200x200?text=Team+2",
+      photo: "/images/team/team-2.png",
     },
     {
-      name: "Emily Davis",
+      name: "Mahmoud Haddad",
       position: "Customer Support Lead",
-      photo: "https://via.placeholder.com/200x200?text=Team+3",
+      photo: "/images/team/team-3.png",
     },
     {
-      name: "Rajesh Kumar",
+      name: "Ahmed Al-Nasser",
       position: "Logistics Manager",
-      photo: "https://via.placeholder.com/200x200?text=Team+4",
+      photo: "/images/team/team-4.png",
     },
   ];
 
   return (
     <section className="team-showcase-section">
-      <h2>Meet Our Team</h2>
+      <h2 className="section-title">Meet Our Team</h2>
       <div className="team-container">
         {team.map((member, index) => (
           <div key={index} className="team-card">
-            <img src={member.photo} alt={member.name} className="team-photo" />
-            <h4>{member.name}</h4>
-            <p>{member.position}</p>
+            <div className="team-photo-wrapper">
+              <img src={member.photo} alt={member.name} className="team-photo" />
+            </div>
+            <h4 className="team-name">{member.name}</h4>
+            <p className="team-position">{member.position}</p>
           </div>
         ))}
       </div>

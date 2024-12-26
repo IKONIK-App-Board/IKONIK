@@ -12,22 +12,30 @@ const StatsCounter = () => {
   const [counts, setCounts] = useState(stats.map(() => 0));
 
   useEffect(() => {
-    const intervals = stats.map((stat, index) => {
-      return setInterval(() => {
-        setCounts((prevCounts) =>
-          prevCounts.map((count, i) =>
-            i === index && count < stat.value ? count + 1 : count
-          )
-        );
-      }, 10);
-    });
+    const animateCounters = () => {
+      stats.forEach((stat, index) => {
+        let currentValue = 0;
+        const interval = setInterval(() => {
+          if (currentValue < stat.value) {
+            currentValue += Math.ceil(stat.value / 100);
+            setCounts((prevCounts) =>
+              prevCounts.map((count, i) => (i === index ? currentValue : count))
+            );
+          } else {
+            clearInterval(interval);
+          }
+        }, 50);
+      });
+    };
 
-    return () => intervals.forEach(clearInterval);
+    animateCounters();
+
+    return () => clearInterval();
   }, []);
 
   return (
     <section className="stats-counter-section">
-      <h2>Our Achievements</h2>
+      <h2 className="stats-heading">Our Achievements</h2>
       <div className="stats-counter-container">
         {stats.map((stat, index) => (
           <div key={index} className="stat-item">

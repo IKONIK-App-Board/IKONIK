@@ -1,30 +1,106 @@
 .faq-section {
-    padding: 50px;
-    background-color: #f0f0f0;
+  padding: 60px 20px;
+  background-color: var(--color-very-light-gray);
+  font-family: var(--Orbitron-font-family), sans-serif;
+  text-align: center;
+}
+
+.faq-section h2 {
+  color: var(--color-black);
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/* FAQ Container */
+.faq-container {
+  margin-top: 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FAQ Item */
+.faq-item {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-gray);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+/* FAQ Question */
+.faq-question {
+  cursor: pointer;
+  color: var(--color-dark-gray);
+  font-size: 18px;
+  font-weight: 500;
+  padding: 18px;
+  border-bottom: 1px solid var(--color-light-gray);
+  transition: color 0.3s ease;
+}
+
+.faq-question.active {
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+.faq-question:hover {
+  color: var(--color-black);
+}
+
+/* FAQ Answer */
+.faq-answer {
+  padding: 18px;
+  font-size: 16px;
+  color: var(--color-dark-gray);
+  line-height: 1.6;
+  display: none;
+  transition: all 0.3s ease;
+  background-color: var(--color-light-gray);
+}
+
+.faq-answer.visible {
+  display: block;
+  opacity: 1;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  
-  .faq-container {
-    margin-top: 20px;
+  100% {
+    opacity: 1;
   }
-  
-  .faq-item {
-    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 40px 10px;
   }
-  
+
+  .faq-section h2 {
+    font-size: 1.8rem;
+  }
+
   .faq-question {
-    cursor: pointer;
-    color: #007bff;
     font-size: 16px;
-    margin: 0;
+    padding: 16px;
   }
-  
-  .faq-question.active {
-    font-weight: bold;
-  }
-  
+
   .faq-answer {
-    margin-top: 5px;
     font-size: 14px;
-    color: #333;
+    padding: 16px;
   }
-  
+}

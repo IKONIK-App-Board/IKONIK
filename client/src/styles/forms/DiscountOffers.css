@@ -1,31 +1,100 @@
 .discount-offers {
-    padding: 50px;
+    padding: 80px 20px;
+    background-color: var(--color-black);
     text-align: center;
-    background-color: #fffbf0;
 }
   
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-white) !important;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+  
+/* Offer Cards Container */
 .offer-cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 20px;
+    gap: 30px;
+    margin-top: 40px;
 }
   
+/* Offer Card */
 .offer-card {
-    max-width: 300px;
-    margin: 10px;
+    max-width: 320px;
+    min-width: 280px;
+    background-color: var(--color-white);
+    padding: 25px 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
   
+.offer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+  
+/* Offer Title */
 .offer-card h4 {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-black);
+    margin-bottom: 15px;
+    text-transform: capitalize;
 }
   
+/* Offer Description */
 .offer-card p {
-    font-size: 16px;
+    font-size: 1rem;
+    color: var(--color-dark-gray);
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .section-heading {
+      font-size: 2rem;
+    }
+  
+    .offer-card {
+      padding: 20px;
+      max-width: 280px;
+    }
+  
+    .offer-card h4 {
+      font-size: 1.6rem;
+    }
+  
+    .offer-card p {
+      font-size: 0.95rem;
+    }
+}
+  
+@media (max-width: 768px) {
+    .section-heading {
+      font-size: 1.8rem;
+    }
+  
+    .offer-cards {
+      justify-content: center;
+    }
+  
+    .offer-card {
+      padding: 15px;
+      max-width: 90%;
+    }
+  
+    .offer-card h4 {
+      font-size: 1.5rem;
+    }
+  
+    .offer-card p {
+      font-size: 0.9rem;
+    }
 }  

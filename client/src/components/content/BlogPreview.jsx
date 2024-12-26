@@ -22,12 +22,18 @@ const BlogPreview = () => {
 
   return (
     <section className="blog-preview-section">
-      <h2>Latest Insights</h2>
+      <h2 className="section-heading-blog">Latest Insights</h2>
       <div className="blog-preview-container">
         {blogs.map((blog, index) => (
           <div key={index} className="blog-preview-item">
-            <img src={blog.image} alt={blog.title} className="blog-preview-image" />
-            <h4>{blog.title}</h4>
+            <div className="blog-image-wrapper">
+              <img
+                src={blog.image}
+                alt={blog.title}
+                className="blog-preview-image"
+              />
+            </div>
+            <h4 className="blog-title">{blog.title}</h4>
             <a href={blog.link} className="blog-preview-link">
               Read More
             </a>

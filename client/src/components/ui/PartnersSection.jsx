@@ -3,10 +3,10 @@ import "../../styles/ui/PartnersSection.css";  // Corrected path to the CSS file
 
 const PartnersSection = () => {
   const partners = [
-    "https://via.placeholder.com/200x80?text=Partner+1",
-    "https://via.placeholder.com/200x80?text=Partner+2",
-    "https://via.placeholder.com/200x80?text=Partner+3",
-    "https://via.placeholder.com/200x80?text=Partner+4",
+    "/images/parteners/partener-1.png",
+    "/images/parteners/partener-2.png",
+    "/images/parteners/partener-3.png",
+    "/images/parteners/partener-4.png",
   ];
 
   return (
