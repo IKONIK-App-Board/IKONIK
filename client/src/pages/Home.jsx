@@ -24,6 +24,7 @@ import VideoSection from "../components/ui/VideoSection";
 import ScrollToTop from "../components/triggers/ScrollToTop";
 import ContactUS from "../components/triggers/ContactUs";
 import AppointmentTrigger from "../components/triggers/AppointmentTrigger";
+import MobileAppPromo from "../components/ui/MobileAppPromo";
 
 const HomePage = () => {
 
@@ -37,6 +38,7 @@ const HomePage = () => {
       <Gallery/>
       <EventCalendar />
       <TeamShowcase />
+      <MobileAppPromo />
       <SuccessStories />
       <LanguagesSupported />
       <FAQSection/>
