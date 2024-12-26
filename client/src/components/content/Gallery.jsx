@@ -3,23 +3,27 @@ import "../../styles/content/Gallery.css";
 
 const Gallery = () => {
   const images = [
-    "https://via.placeholder.com/300x200?text=Gallery+1",
-    "https://via.placeholder.com/300x200?text=Gallery+2",
-    "https://via.placeholder.com/300x200?text=Gallery+3",
-    "https://via.placeholder.com/300x200?text=Gallery+4",
+    "/images/facilities/dist-1.png",
+    "/images/facilities/dist-2.png",
+    "/images/facilities/dist-3.png",
+    "/images/facilities/dist-4.png",
   ];
 
   return (
     <section className="gallery-section">
-      <h2>Our Facilities & Destinations</h2>
+      <h2 className="section-title">Our Facilities & Destinations</h2>
       <div className="gallery-grid">
         {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`Gallery ${index + 1}`}
-            className="gallery-image"
-          />
+          <div key={index} className="gallery-item">
+            <img
+              src={image}
+              alt={`Gallery ${index + 1}`}
+              className="gallery-image"
+            />
+            <div className="gallery-overlay">
+              <p className="gallery-text">Gallery {index + 1}</p>
+            </div>
+          </div>
         ))}
       </div>
     </section>
